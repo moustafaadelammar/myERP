@@ -10,7 +10,7 @@ echo.
 set "REPO_URL=https://github.com/moustafaadelammar/myERP.git"
 set "BRANCH=feature/local-fullstack"
 set "SCRIPT_DIR=%~dp0"
-if exist "%SCRIPT_DIR%.git" (set "PROJECT=%SCRIPT_DIR:~0,-1%") else (set "PROJECT=%USERPROFILE%\myERP")
+if exist "%SCRIPT_DIR%.git" (set "PROJECT=%SCRIPT_DIR:~0,-1%") else (set "PROJECT=%USERPROFILE%\myERB")
 set "COMPOSE=docker-compose.local.yml"
 
 echo [1/7] Checking Git and Docker...
